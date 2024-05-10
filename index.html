@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title> Personality Survey</title>
+  </head>
+  <body>
+    <h1 id='title'> Personality Survey</h1>
+    <p id='description'>This data will help link human personalities with animals
+    <form id='survey-form'>
+      <fieldset>
+        <label id="name-label">Name / Alias: <input placeholder='Milo' id=name type='text' required name='name'> 
+        </label>
+        <label id="email-label">E-mail: <input placeholder='catperson@gmail.com' name=e-mail id=email type='email' required>
+        </label>
+        <label id="number-label">Age:<input placeholder='4'  name=agea id=number type='number' min=4 max=130 required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Which of these traits best describes you?</label>
+        <select id='dropdown' name='personality-select'>
+          <option value=''>(select one)</option>
+          <option value='8'>Lazy</option>
+          <option value='1'>Whimsical</option>
+          <option value='2'>Loyal</option>
+          <option value='3'>Playful</option>
+          <option value='4'>Agreeable</option>
+          <option value='5'>Loving</option>
+          <option value='6'>Introverted</option>
+          <option value='7'>Social</option> 
+        </select>
+        <p class='question'>Do you own a pet?</p>
+        <label> 
+          <input type='radio'name='pet' class="inline" value='pet1'>   Yes
+          </label>
+          <label>
+           <input class='inline' type='radio' name='pet'
+           value='pet0'>  No
+          </label>
+        <fieldset>
+           <p>Which of these activities are something you would do?
+              <label>
+             
+             <input name="prefer" value="reading" type="checkbox" class="input-checkbox">
+              Reading a book
+             </label>
+             <label>
+             
+             <input name="prefer" value="football" type="checkbox" class="input-checkbox">
+              Playing football 
+             </label>
+             <label>
+             
+             <input name="prefer" value="beach" type="checkbox" class="input-checkbox"> 
+             Going to the beach
+             </label>
+             <label>
+             
+             <input name="prefer" value="party" type="checkbox" class="input-checkbox"> 
+             Going to the club
+             </label>
+             <label>
+             
+             <input name="prefer" value="gaming" type="checkbox" class="input-checkbox"> 
+             Playing a video-game       
+             </label>
+             <label>
+             
+             <input name="prefer" value="watching" type="checkbox" class="input-checkbox">
+             Watching a movie/show
+             </label>
+             <label>
+             
+             <input name="prefer" value="training" type="checkbox" class="input-checkbox">
+             Working out/ Running 
+             </label>
+             </fieldset>
+
+             
+           </fieldset>
+          <fieldset>
+            <label> Describe your ideal morning:</label>
+              <textarea  placeholder="I woke up to sound of birds chirping..." class='txtarea'></textarea>
+            <label><input type="submit" id='submit'>                 </label>
+          </fieldset>
+    </form>
+  </body>
+</html>
